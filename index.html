@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ app_title or "Review Tiên giới" }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Review Tiên giới</h1>
+    <form id="form">
+      <label>Tiêu đề video</label>
+      <input id="title" placeholder="Ví dụ: Kiếm Vô Song — Review" value="Review Tiên giới" />
+
+      <label>Giọng đọc</label>
+      <select id="voice">
+        <option value="vi" selected>Tiếng Việt (giọng nữ ưu tiên)</option>
+        <option value="en">English</option>
+      </select>
+
+      <label>Sections (mỗi section 1 dòng dạng Heading|Nội dung)</label>
+      <textarea id="sections" placeholder="Tóm tắt|Truyện kể về...&#10;Nhân vật|Nhân vật chính là..."></textarea>
+
+      <button type="button" id="createBtn">Tạo video</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h3>Kết quả</h3>
+      <a id="downloadLink" href="#" download>Download video</a>
+    </div>
+
+    <div id="log"></div>
+    <p class="hint">Giao diện tối (nền đen) — giọng nữ mặc định.</p>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

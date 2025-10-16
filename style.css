@@ -1,0 +1,10 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#05060a; color:#e7eef6; margin:0; padding:20px; }
+.container { max-width:720px; margin:0 auto; }
+h1 { font-size:22px; margin-bottom:10px; color:#ffd780; }
+label { display:block; margin-top:12px; color:#cfe6ff; }
+input, textarea, select { width:100%; padding:10px; border-radius:8px; border:1px solid #233040; background:#0b1220; color:#fff; }
+button { margin-top:12px; padding:10px 16px; border-radius:8px; background:#6a4cff; color:white; border:0; width:100%; font-size:16px; }
+.hidden { display:none; }
+a { color:#ffd780; word-break:break-all; }
+#log { margin-top:12px; color:#b8bfc8; font-size:14px; }
+.hint { color:#9aa6b2; margin-top:12px; font-size:13px; }
